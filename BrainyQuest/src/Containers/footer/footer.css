@@ -1,0 +1,150 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+    padding: 4rem 2rem 2rem; /* Más padding arriba, menos abajo */
+    color: #fff;
+    font-family: var(--font-family);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin-bottom: 2rem;
+}
+
+.footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.footer-links_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links_logo img {
+    width: 100px;
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 1rem;
+}
+
+.footer-links_logo p {
+    font-size: 14px; /* Tamaño de fuente un poco más grande */
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.8; /* Texto un poco más suave */
+}
+
+.footer-links_div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links_div h4 {
+    font-size: 16px; /* Tamaño de fuente más grande */
+    line-height: 20px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-links_div p {
+    font-size: 14px; /* Tamaño de fuente más grande */
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.8; /* Texto un poco más suave */
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Efecto hover */
+}
+
+.footer-links_div p:hover {
+    opacity: 1; /* Texto más visible al hacer hover */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer-social_icon {
+    font-size: 24px; /* Tamaño de iconos más grande */
+    color: #fff;
+    margin: 0 1rem; /* Más espacio entre iconos */
+    cursor: pointer;
+    transition: color 0.2s ease; /* Efecto hover */
+}
+
+.footer-social_icon:hover {
+    color: var(--color-text); /* Cambia el color al hacer hover */
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea decorativa */
+}
+
+.footer-copyright p {
+    font-size: 14px; /* Tamaño de fuente más grande */
+    line-height: 20px;
+    color: #fff;
+    transition: opacity 0.3s ease; /* Efecto hover */
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links div {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .footer-links_div {
+        align-items: center;
+    }
+
+    .footer-links_logo p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer {
+        padding: 2rem 1rem; /* Menos padding en móviles */
+    }
+
+    .footer-links_logo img {
+        width: 80px; /* Imagen más pequeña en móviles */
+    }
+
+    .footer-links_div h4 {
+        font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .footer-links_div p {
+        font-size: 12px; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .footer-social_icon {
+        font-size: 20px; /* Iconos más pequeños en móviles */
+    }
+}
